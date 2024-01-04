@@ -16,6 +16,10 @@ public class TestControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    public TestControllerTest(MockMvc mockMvc) {
+        this.mockMvc = mockMvc;
+    }
+
     @Test
     public void testGetTest() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/test"))
