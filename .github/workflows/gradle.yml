@@ -2,16 +2,12 @@
 name: Unit Tests with Gradle on Pull Request
 
 on:
-  push:
-    branches: [ "master" ]
+
   pull_request:
     branches: [ "master" ]
 
-permissions:
-  contents: read
-
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -24,7 +20,5 @@ jobs:
           distribution: 'temurin'
       - name: Grant Permissions to gradlew
         run: chmod +x gradlew
-      - name: Build with Gradle
-        uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
-        with:
-          arguments: build
+      - name: Run Unit tests
+        run: test
