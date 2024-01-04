@@ -7,4 +7,4 @@ This homework is about Continuous Integration/Continuous Deployment:
 - Add some gitAction, so on pull request in main branch of the project unit tests must be run.
 
 
-That`s last HomeWork on that course.
+That`s last HomeWork on that course JavaDev-14.
