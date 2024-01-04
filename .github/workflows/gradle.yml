@@ -2,6 +2,7 @@ name: Welcome New Workflow
 
 on:
   pull_request:
+    branches: [ "main" ]
 
 jobs:
   test:

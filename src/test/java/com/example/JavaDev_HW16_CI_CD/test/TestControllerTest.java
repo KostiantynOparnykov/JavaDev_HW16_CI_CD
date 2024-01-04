@@ -14,11 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 public class TestControllerTest {
 
     @Autowired
-    private final MockMvc mockMvc;
-
-    public TestControllerTest(MockMvc mockMvc) {
-        this.mockMvc = mockMvc;
-    }
+    private  MockMvc mockMvc;
 
     @Test
     public void testGetTest() throws Exception {
